@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(58, 58, 58);
+}
+
+/*MENU*/
+nav#nav_menu{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 0px;
+    padding: 5px 16px;
+    font-family: 'Inconsolata', monospace;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    animation: infinite;
+    animation-name: rgb_line;
+    animation-duration: 10000ms;
+    animation-delay: 100ms;
+    background-color: rgb(30, 30, 30);
+}
+nav#nav_menu > ul > li:hover{
+    font-size: 20px;
+    transition: 200ms;
+}
+nav#nav_menu > ul > li{
+    display: inline-block;
+    position: relative;
+    left: 1040px;
+    margin: 0 5px;
+}
+nav#nav_menu > ul > li > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav#nav_menu > h1{
+    margin-left: 10px;
+}
+
+/*DIVs*/
+div#box1{
+    margin: 10px 32px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+/*TEXTOS*/
+div#box1 > p.pars{
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+/*IMGS*/
+div#box1 > figure > img#css_logo{
+    position: absolute;
+    top: 75px;
+    left: 600px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(155, 155, 155);
+    border-radius: 5px;
+}
+div#box1 > figure > figcaption{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 175px;
+    left: 636px;
+}
+
+/*Keyframes*/
+@keyframes rgb_line{
+    0%{
+        box-shadow: 0px 3px 20px rgb(255, 0, 0);
+    }
+    10%{
+        box-shadow: 0px 3px 20px rgb(255, 132, 0);
+    }
+    20%{
+        box-shadow: 0px 3px 20px rgb(255, 230, 0);
+    }
+    30%{
+        box-shadow: 0px 3px 20px rgb(132, 255, 0);
+    }
+    40%{
+        box-shadow: 0px 3px 20px rgb(17, 255, 0);
+    }
+    50%{
+        box-shadow: 0px 3px 20px rgb(0, 255, 98);
+    }
+    60%{
+        box-shadow: 0px 3px 20px rgb(0, 255, 238);
+    }
+    70%{
+        box-shadow: 0px 3px 20px rgb(0, 162, 255);
+    }
+    80%{
+        box-shadow: 0px 3px 20px rgb(13, 0, 255);
+    }
+    90%{
+        box-shadow: 0px 3px 20px rgb(208, 0, 255);
+    }
+    100%{
+        box-shadow: 0px 3px 20px rgb(255, 0, 93);
+    }
+}
